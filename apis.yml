@@ -1,7 +1,28 @@
 aid: sigtuple
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sigtuple.png
 name: SigTuple
-description: 'SigTuple is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.'
+description: 'SigTuple Technologies is a medical-technology company that combines artificial
+  intelligence, robotics, microfluidics and high-resolution digital microscopy to automate
+  the microscopic analysis of biological samples across human and veterinary diagnostics.
+  Its product portfolio includes AS76, a CE-IVDR compliant automated digital cell morphology
+  analyzer for peripheral blood smears with true 100X oil immersion; AI100, an FDA- and
+  CE-cleared multi-purpose analyzer for blood smear and urine sediment analysis; and SigVet,
+  an AI point-of-care platform for veterinary clinics. Backed by Accel, the company reports
+  10+ years of R&D, 27 patents and 350+ deployments globally. As of this enrichment pass
+  SigTuple publishes no public developer/API surface (no docs portal, OpenAPI, /.well-known
+  discovery, or llms.txt were found); this profile captures identity plus a probed domain-security
+  posture.'
 url: https://raw.githubusercontent.com/api-evangelist/sigtuple/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +32,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Ai
+- Healthcare
+- Diagnostics
+- Pathology
+- Medical Devices
+- Microscopy
+- Machine Learning
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sigtuple-domain-security.yml
 - type: Website
-  url: http://www.sigtuple.com
+  url: https://sigtuple.com
+- type: Blog
+  url: https://sigtuple.com/blogs
+- type: Support
+  url: https://sigtuple.com/contact
+- type: TermsOfService
+  url: https://sigtuple.com/terms
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
